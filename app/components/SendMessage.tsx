@@ -10,9 +10,9 @@ import {
 import { Spinner } from "@/components/ui/spinner"
 import { ScrollArea } from "@/components/ui/scroll-area"
 
-export default function SendMessage() {
+export default function SendMessage(props: { cla?: string }) {
   return (
-    <div className="flex w-full flex-col gap-4">
+    <div className={`flex w-full flex-col gap-4 mb-2 ${props.cla}`}>
 
       <InputGroup className="">
 

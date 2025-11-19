@@ -4,5 +4,6 @@ export async function GET() {
 
 export async function POST(req: Request) {
   const body = await req.json();
-  return Response.json({ received: body });
+  const query = body.query;
+  return Response.json({ body, query });
 }
