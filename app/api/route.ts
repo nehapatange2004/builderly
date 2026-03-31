@@ -1,5 +1,5 @@
 export async function GET() {
-  return Response.json({ message: "Neha's backend is working" });
+  return Response.json({ message: "Backend is working" });
 }
 
 export async function POST(req: Request) {
